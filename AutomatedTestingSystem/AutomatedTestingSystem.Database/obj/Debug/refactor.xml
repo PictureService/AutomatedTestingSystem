@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0">
+  <Operation Name="Rename Refactor" Key="25a82929-48df-4e61-9955-0358fa1a99cc" ChangeDateTime="03/11/2017 13:16:26" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[Users].[GroupsControlWorks].[GroupWorkId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Users].[GroupsControlWorks]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ControlWorkId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e9d37d76-e94d-406f-a7fd-8f5eba365683" ChangeDateTime="03/11/2017 13:25:48" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[Tests].[ControlWorkResult].[CountTrueAnswer]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Tests].[ControlWorkResult]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CountTrueAnswers" />
+  </Operation>
+</Operations>

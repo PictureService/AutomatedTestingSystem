@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26228.4
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomatedTestingSystem.WebUI", "AutomatedTestingSystem\AutomatedTestingSystem.WebUI.csproj", "{32A43F69-47DB-47E5-80D1-CF0762F03B76}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "AutomatedTestingSystem.Database", "AutomatedTestingSystem.Database\AutomatedTestingSystem.Database.sqlproj", "{BE288B6A-39D2-407A-867A-9C56B8FDE64F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,12 @@ Global
 		{32A43F69-47DB-47E5-80D1-CF0762F03B76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32A43F69-47DB-47E5-80D1-CF0762F03B76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32A43F69-47DB-47E5-80D1-CF0762F03B76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE288B6A-39D2-407A-867A-9C56B8FDE64F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE288B6A-39D2-407A-867A-9C56B8FDE64F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE288B6A-39D2-407A-867A-9C56B8FDE64F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BE288B6A-39D2-407A-867A-9C56B8FDE64F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE288B6A-39D2-407A-867A-9C56B8FDE64F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE288B6A-39D2-407A-867A-9C56B8FDE64F}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

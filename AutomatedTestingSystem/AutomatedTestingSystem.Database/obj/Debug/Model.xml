@@ -1,0 +1,1843 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataSchemaModel FileFormatVersion="1.2" SchemaVersion="2.9" DspName="Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider" CollationLcid="1033" CollationCaseSensitive="False" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+	<Header>
+		<CustomData Category="AnsiNulls">
+			<Metadata Name="AnsiNulls" Value="True" />
+		</CustomData>
+		<CustomData Category="QuotedIdentifier">
+			<Metadata Name="QuotedIdentifier" Value="True" />
+		</CustomData>
+		<CustomData Category="CompatibilityMode">
+			<Metadata Name="CompatibilityMode" Value="130" />
+		</CustomData>
+		<CustomData Category="Reference" Type="Assembly">
+			<Metadata Name="LogicalName" Value="AutomatedTestingSystem.Database.dll" />
+			<Metadata Name="FileName" Value="C:\USERS\ГЛЕБ\DOCUMENTS\GITHUB\AUTOMATEDTESTINGSYSTEM\AUTOMATEDTESTINGSYSTEM\AUTOMATEDTESTINGSYSTEM.DATABASE\OBJ\DEBUG\AUTOMATEDTESTINGSYSTEM.DATABASE.DLL" />
+			<Metadata Name="AssemblyName" Value="AutomatedTestingSystem.Database" />
+			<Metadata Name="PermissionSet" Value="SAFE" />
+			<Metadata Name="Owner" Value="" />
+			<Metadata Name="GenerateSqlClrDdl" Value="True" />
+			<Metadata Name="IsVisible" Value="True" />
+			<Metadata Name="IsModelAware" Value="True" />
+			<Metadata Name="SkipCreationIfEmpty" Value="True" />
+			<Metadata Name="AssemblySymbolsName" Value="C:\Users\Глеб\Documents\GitHub\AutomatedTestingSystem\AutomatedTestingSystem\AutomatedTestingSystem.Database\obj\Debug\AutomatedTestingSystem.Database.pdb" />
+		</CustomData>
+		<CustomData Category="SqlCmdVariables" Type="SqlCmdVariable" />
+	</Header>
+	<Model>
+		<Element Type="SqlDatabaseOptions">
+			<Property Name="Collation" Value="SQL_Latin1_General_CP1_CI_AS" />
+			<Property Name="IsAnsiNullDefaultOn" Value="True" />
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Property Name="IsAnsiWarningsOn" Value="True" />
+			<Property Name="IsArithAbortOn" Value="True" />
+			<Property Name="IsConcatNullYieldsNullOn" Value="True" />
+			<Property Name="IsTornPageProtectionOn" Value="False" />
+			<Property Name="IsFullTextEnabled" Value="True" />
+			<Property Name="CompatibilityMode" Value="130" />
+			<Property Name="PageVerifyMode" Value="3" />
+			<Property Name="DefaultLanguage" Value="" />
+			<Property Name="DefaultFullTextLanguage" Value="" />
+			<Property Name="QueryStoreStaleQueryThreshold" Value="367" />
+			<Relationship Name="DefaultFilegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Tests].[Answer].[Id].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Идентификатор ответа']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Tests].[Answer].[Id]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Tests].[Answer].[IsTrue].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Является ли ответ правильным']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Tests].[Answer].[IsTrue]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Tests].[Answer].[QuestionId].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Идентификатор вопроса, к которому принадлежит ответ']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Tests].[Answer].[QuestionId]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Tests].[Answer].[Text].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Текст ответа']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Tests].[Answer].[Text]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Tests].[ControlWork].[AuthorUserId].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Идентификатор автора теста']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Tests].[ControlWork].[AuthorUserId]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Tests].[ControlWork].[Description].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Описание теста']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Tests].[ControlWork].[Description]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Tests].[ControlWork].[Id].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Идентификатор теста']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Tests].[ControlWork].[Id]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Tests].[ControlWork].[Name].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Название теста']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Tests].[ControlWork].[Name]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Tests].[ControlWork].[TestTypeId].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Идентификатор типа теста']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Tests].[ControlWork].[TestTypeId]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Tests].[ControlWorkResult].[ControlWorkId].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Идентификатор теста']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Tests].[ControlWorkResult].[ControlWorkId]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Tests].[ControlWorkResult].[CountTrueAnswers].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Количество правильных ответов в процентном соотношении']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Tests].[ControlWorkResult].[CountTrueAnswers]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Tests].[ControlWorkResult].[Id].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Идентификатор результата прохождения теста']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Tests].[ControlWorkResult].[Id]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Tests].[ControlWorkResult].[UserId].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Идентификатор пользователя, прошедшего тест']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Tests].[ControlWorkResult].[UserId]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Tests].[Question].[ControlWorkId].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Идентификатор теста, к которому относится вопрос']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Tests].[Question].[ControlWorkId]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Tests].[Question].[DateAdd].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Дата добавления вопроса']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Tests].[Question].[DateAdd]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Tests].[Question].[Id].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Идентификатор вопроса']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Tests].[Question].[Id]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Tests].[Question].[QuestionTypeId].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Идентификатор типа вопроса']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Tests].[Question].[QuestionTypeId]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Tests].[Question].[Text].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Текст вопроса']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Tests].[Question].[Text]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Tests].[QuestionType].[Id].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Идентификатор типа вопроса']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Tests].[QuestionType].[Id]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Tests].[QuestionType].[Name].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Название типа вопроса']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Tests].[QuestionType].[Name]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Tests].[TestType].[Id].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Идентификатор типа теста']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Tests].[TestType].[Id]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Tests].[TestType].[Name].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Название типа теста']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Tests].[TestType].[Name]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Users].[Group].[GroupTypeId].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Тип группы']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Users].[Group].[GroupTypeId]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Users].[Group].[Id].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Идентификатор группы']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Users].[Group].[Id]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Users].[Group].[Name].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Название группы']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Users].[Group].[Name]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Users].[GroupsControlWorks].[ControlWorkId].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Идентификатор теста']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Users].[GroupsControlWorks].[ControlWorkId]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Users].[GroupsControlWorks].[GroupId].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Идентификатор группы']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Users].[GroupsControlWorks].[GroupId]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Users].[GroupsControlWorks].[Id].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Идентификатор связи']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Users].[GroupsControlWorks].[Id]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Users].[GroupType].[Id].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Идентификатор типа группы']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Users].[GroupType].[Id]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Users].[GroupType].[Name].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Название типа группы']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Users].[GroupType].[Name]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Users].[User].[GroupId].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Идентификатор группы пользователя']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Users].[User].[GroupId]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Users].[User].[Id].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Идентификатор пользователя']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Users].[User].[Id]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Users].[User].[Login].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Логин пользователя, под которым он сможет авторизоваться']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Users].[User].[Login]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Users].[User].[Name].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Имя пользователя']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Users].[User].[Name]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Users].[User].[Password].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Пароль пользователя, который он будет использовать для прохождения авторизации.']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Users].[User].[Password]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Users].[User].[Patronymic].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Отчество пользователя']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Users].[User].[Patronymic]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Users].[User].[Surname].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Фамилия пользователя']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Users].[User].[Surname]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Users].[User].[UserTypeId].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Идентификатор типа пользователя']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Users].[User].[UserTypeId]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Users].[UserType].[Id].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Идентификатор типа пользователя']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Users].[UserType].[Id]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlColumn].[Users].[UserType].[Name].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Название типа пользователя']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Users].[UserType].[Name]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlTableBase].[Tests].[Answer].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Возможный ответ на вопрос к тесту']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Tests].[Answer]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlTableBase].[Tests].[ControlWork].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Непосредственно тесты, которые должны будут создавать одни пользователи и проходить другие.']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Tests].[ControlWork]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlTableBase].[Tests].[ControlWorkResult].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Результат прохождения теста']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Tests].[ControlWorkResult]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlTableBase].[Tests].[Question].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Вопрос, который добавляется к тесту и на который пользователи должны будут давать ответы.']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Tests].[Question]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlTableBase].[Tests].[QuestionType].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Тип вопроса, который добавляется к тесту. Например "вопрос с выбором варианта ответа", "вопрос с вводом ответа", "несколько правильных ответов".']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Tests].[QuestionType]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlTableBase].[Tests].[TestType].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Тип теста. Например зачет, экзамен.']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Tests].[TestType]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlTableBase].[Users].[Group].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Группа пользователя. Используется для иерархичного вывода списка пользователей.']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Users].[Group]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlTableBase].[Users].[GroupsControlWorks].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Связь, к каким тестам группа имеет доступ']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Users].[GroupsControlWorks]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlTableBase].[Users].[GroupType].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Тип группы пользователя. Например студенты, преподаватели, администраторы.']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Users].[GroupType]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlTableBase].[Users].[User].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Список пользователей, любых, которые могут присутствовать в системе']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Users].[User]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlExtendedProperty" Name="[SqlTableBase].[Users].[UserType].[MS_Description]">
+			<Property Name="Value">
+				<Value><![CDATA[N'Тип пользователя. Например администратор, преподаватель, студент.']]></Value>
+			</Property>
+			<Relationship Name="Host">
+				<Entry>
+					<References Name="[Users].[UserType]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlSchema" Name="[Tests]">
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlTable" Name="[Tests].[Answer]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Tests].[Answer].[Id]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Tests].[Answer].[QuestionId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Tests].[Answer].[Text]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Tests].[Answer].[IsTrue]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References Name="[Tests]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="3" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="4" />
+		</Element>
+		<Element Type="SqlTable" Name="[Tests].[ControlWork]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Tests].[ControlWork].[Id]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Tests].[ControlWork].[AuthorUserId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Tests].[ControlWork].[Name]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Tests].[ControlWork].[Description]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="400" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Tests].[ControlWork].[TestTypeId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References Name="[Tests]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="5" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="6" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="7" />
+		</Element>
+		<Element Type="SqlTable" Name="[Tests].[ControlWorkResult]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Tests].[ControlWorkResult].[Id]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Tests].[ControlWorkResult].[ControlWorkId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Tests].[ControlWorkResult].[UserId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Tests].[ControlWorkResult].[CountTrueAnswers]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References Name="[Tests]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="8" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="9" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="10" />
+		</Element>
+		<Element Type="SqlForeignKeyConstraint" Name="[Tests].[FK_Answer_Question]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[Tests].[Answer].[QuestionId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[Tests].[Answer]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[Tests].[Question].[Id]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[Tests].[Question]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="4" />
+		</Element>
+		<Element Type="SqlForeignKeyConstraint" Name="[Tests].[FK_ControlWork_TestType]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[Tests].[ControlWork].[TestTypeId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[Tests].[ControlWork]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[Tests].[TestType].[Id]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[Tests].[TestType]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="7" />
+		</Element>
+		<Element Type="SqlForeignKeyConstraint" Name="[Tests].[FK_ControlWork_User]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[Tests].[ControlWork].[AuthorUserId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[Tests].[ControlWork]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[Users].[User].[Id]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[Users].[User]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="6" />
+		</Element>
+		<Element Type="SqlForeignKeyConstraint" Name="[Tests].[FK_ControlWorkResult_ControlWork]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[Tests].[ControlWorkResult].[ControlWorkId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[Tests].[ControlWorkResult]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[Tests].[ControlWork].[Id]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[Tests].[ControlWork]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="10" />
+		</Element>
+		<Element Type="SqlForeignKeyConstraint" Name="[Tests].[FK_ControlWorkResult_User]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[Tests].[ControlWorkResult].[UserId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[Tests].[ControlWorkResult]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[Users].[User].[Id]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[Users].[User]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="9" />
+		</Element>
+		<Element Type="SqlForeignKeyConstraint" Name="[Tests].[FK_Question_ControlWork]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[Tests].[Question].[ControlWorkId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[Tests].[Question]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[Tests].[ControlWork].[Id]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[Tests].[ControlWork]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="11" />
+		</Element>
+		<Element Type="SqlForeignKeyConstraint" Name="[Tests].[FK_Question_QuestionType]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[Tests].[Question].[QuestionTypeId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[Tests].[Question]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[Tests].[QuestionType].[Id]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[Tests].[QuestionType]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="12" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[Tests].[PK_Answer]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[Tests].[Answer].[Id]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[Tests].[Answer]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="3" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[Tests].[PK_ControlWork]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[Tests].[ControlWork].[Id]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[Tests].[ControlWork]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="5" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[Tests].[PK_ControlWorkResult]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[Tests].[ControlWorkResult].[Id]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[Tests].[ControlWorkResult]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="8" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[Tests].[PK_Question]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[Tests].[Question].[Id]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[Tests].[Question]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="13" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[Tests].[PK_QuestionType]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[Tests].[QuestionType].[Id]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[Tests].[QuestionType]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="14" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[Tests].[PK_TestType]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[Tests].[TestType].[Id]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[Tests].[TestType]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="15" />
+		</Element>
+		<Element Type="SqlTable" Name="[Tests].[Question]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Tests].[Question].[Id]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Tests].[Question].[Text]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="500" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Tests].[Question].[ControlWorkId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Tests].[Question].[QuestionTypeId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Tests].[Question].[DateAdd]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References Name="[Tests]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="13" />
+			<AttachedAnnotation Disambiguator="11" />
+			<AttachedAnnotation Disambiguator="12" />
+		</Element>
+		<Element Type="SqlTable" Name="[Tests].[QuestionType]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Tests].[QuestionType].[Id]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Tests].[QuestionType].[Name]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References Name="[Tests]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="14" />
+		</Element>
+		<Element Type="SqlTable" Name="[Tests].[TestType]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Tests].[TestType].[Id]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Tests].[TestType].[Name]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References Name="[Tests]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="15" />
+		</Element>
+		<Element Type="SqlSchema" Name="[Users]">
+			<Relationship Name="Authorizer">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlForeignKeyConstraint" Name="[Users].[FK_Group_GroupType]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[Users].[Group].[GroupTypeId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[Users].[Group]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[Users].[GroupType].[Id]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[Users].[GroupType]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="16" />
+		</Element>
+		<Element Type="SqlForeignKeyConstraint" Name="[Users].[FK_GroupsControlWorks_ControlWork]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[Users].[GroupsControlWorks].[ControlWorkId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[Users].[GroupsControlWorks]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[Tests].[ControlWork].[Id]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[Tests].[ControlWork]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="17" />
+		</Element>
+		<Element Type="SqlForeignKeyConstraint" Name="[Users].[FK_GroupsControlWorks_Group]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[Users].[GroupsControlWorks].[GroupId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[Users].[GroupsControlWorks]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[Users].[Group].[Id]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[Users].[Group]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="18" />
+		</Element>
+		<Element Type="SqlForeignKeyConstraint" Name="[Users].[FK_User_Group]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[Users].[User].[GroupId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[Users].[User]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[Users].[Group].[Id]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[Users].[Group]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="19" />
+		</Element>
+		<Element Type="SqlForeignKeyConstraint" Name="[Users].[FK_User_UserType]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[Users].[User].[UserTypeId]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[Users].[User]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[Users].[UserType].[Id]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[Users].[UserType]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="20" />
+		</Element>
+		<Element Type="SqlTable" Name="[Users].[Group]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Users].[Group].[Id]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Users].[Group].[Name]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Users].[Group].[GroupTypeId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References Name="[Users]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="21" />
+			<AttachedAnnotation Disambiguator="16" />
+		</Element>
+		<Element Type="SqlTable" Name="[Users].[GroupsControlWorks]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Users].[GroupsControlWorks].[Id]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Users].[GroupsControlWorks].[GroupId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Users].[GroupsControlWorks].[ControlWorkId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References Name="[Users]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="22" />
+			<AttachedAnnotation Disambiguator="18" />
+			<AttachedAnnotation Disambiguator="17" />
+		</Element>
+		<Element Type="SqlTable" Name="[Users].[GroupType]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Users].[GroupType].[Id]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Users].[GroupType].[Name]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References Name="[Users]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="23" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[Users].[PK_Group]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[Users].[Group].[Id]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[Users].[Group]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="21" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[Users].[PK_GroupsControlWork]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[Users].[GroupsControlWorks].[Id]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[Users].[GroupsControlWorks]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="22" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[Users].[PK_GroupType]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[Users].[GroupType].[Id]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[Users].[GroupType]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="23" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[Users].[PK_User]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[Users].[User].[Id]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[Users].[User]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="24" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[Users].[PK_UserType]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[Users].[UserType].[Id]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[Users].[UserType]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="25" />
+		</Element>
+		<Element Type="SqlTable" Name="[Users].[User]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Users].[User].[Id]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Users].[User].[UserTypeId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Users].[User].[GroupId]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Users].[User].[Login]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="200" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Users].[User].[Password]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Users].[User].[Name]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="150" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Users].[User].[Surname]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="150" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Users].[User].[Patronymic]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="150" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References Name="[Users]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="24" />
+			<AttachedAnnotation Disambiguator="20" />
+			<AttachedAnnotation Disambiguator="19" />
+		</Element>
+		<Element Type="SqlTable" Name="[Users].[UserType]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Users].[UserType].[Id]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[Users].[UserType].[Name]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References Name="[Users]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="25" />
+		</Element>
+	</Model>
+</DataSchemaModel>
