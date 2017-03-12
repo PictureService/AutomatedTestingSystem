@@ -3,3 +3,7 @@ C:\Users\Глеб\Documents\GitHub\AutomatedTestingSystem\AutomatedTestingSystem
 C:\Users\Глеб\Documents\GitHub\AutomatedTestingSystem\AutomatedTestingSystem\AutomatedTestingSystem.Database\bin\Debug\AutomatedTestingSystem.Database.pdb
 C:\Users\Глеб\Documents\GitHub\AutomatedTestingSystem\AutomatedTestingSystem\AutomatedTestingSystem.Database\obj\Debug\AutomatedTestingSystem.Database.dll
 C:\Users\Глеб\Documents\GitHub\AutomatedTestingSystem\AutomatedTestingSystem\AutomatedTestingSystem.Database\obj\Debug\AutomatedTestingSystem.Database.pdb
+C:\Users\Глеб\Documents\GitHub\AutomatedTestingSystem\AutomatedTestingSystem\AutomatedTestingSystem.Database\obj\Debug\Model.xml
+C:\Users\Глеб\Documents\GitHub\AutomatedTestingSystem\AutomatedTestingSystem\AutomatedTestingSystem.Database\obj\Debug\refactor.xml
+C:\Users\Глеб\Documents\GitHub\AutomatedTestingSystem\AutomatedTestingSystem\AutomatedTestingSystem.Database\obj\Debug\postdeploy.sql
+C:\Users\Глеб\Documents\GitHub\AutomatedTestingSystem\AutomatedTestingSystem\AutomatedTestingSystem.Database\obj\Debug\predeploy.sql

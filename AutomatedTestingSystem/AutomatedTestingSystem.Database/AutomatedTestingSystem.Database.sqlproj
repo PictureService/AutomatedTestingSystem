@@ -79,8 +79,16 @@
     <Build Include="Tables\Users\GroupsControlWorks.sql" />
     <Build Include="Tables\Users\User.sql" />
     <Build Include="Tables\Tests\ControlWorkResult.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <RefactorLog Include="AutomatedTestingSystem.Database.refactorlog" />
+    <Build Include="Programmability\TableValuedFunctions\Answer_Read.sql" />
+    <Build Include="Programmability\TableValuedFunctions\ControlWork_Read.sql" />
+    <Build Include="Programmability\TableValuedFunctions\ControlWorkResult_Read.sql" />
+    <Build Include="Programmability\TableValuedFunctions\Question_Read.sql" />
+    <Build Include="Programmability\TableValuedFunctions\Group_Read.sql" />
+    <Build Include="Programmability\TableValuedFunctions\GroupsControlWorks_Read.sql" />
+    <Build Include="Programmability\TableValuedFunctions\User_Read.sql" />
+    <Build Include="Programmability\TableValuedFunctions\QuestionType_Read.sql" />
+    <Build Include="Programmability\TableValuedFunctions\TestType_Read.sql" />
+    <Build Include="Programmability\TableValuedFunctions\GroupType_Read.sql" />
+    <Build Include="Programmability\TableValuedFunctions\UserType_Read.sql" />
   </ItemGroup>
 </Project>
