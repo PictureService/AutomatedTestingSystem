@@ -64,6 +64,10 @@
     <Folder Include="Programmability\TableValuedFunctions" />
     <Folder Include="Tables\Users" />
     <Folder Include="Tables\Tests" />
+    <Folder Include="Programmability\TableValuedFunctions\Tests" />
+    <Folder Include="Programmability\TableValuedFunctions\Users" />
+    <Folder Include="Programmability\StoredProcedures\Tests" />
+    <Folder Include="Programmability\StoredProcedures\Users" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Schemas\Users.sql" />
@@ -79,16 +83,35 @@
     <Build Include="Tables\Users\GroupsControlWorks.sql" />
     <Build Include="Tables\Users\User.sql" />
     <Build Include="Tables\Tests\ControlWorkResult.sql" />
-    <Build Include="Programmability\TableValuedFunctions\Answer_Read.sql" />
-    <Build Include="Programmability\TableValuedFunctions\ControlWork_Read.sql" />
-    <Build Include="Programmability\TableValuedFunctions\ControlWorkResult_Read.sql" />
-    <Build Include="Programmability\TableValuedFunctions\Question_Read.sql" />
-    <Build Include="Programmability\TableValuedFunctions\Group_Read.sql" />
-    <Build Include="Programmability\TableValuedFunctions\GroupsControlWorks_Read.sql" />
-    <Build Include="Programmability\TableValuedFunctions\User_Read.sql" />
-    <Build Include="Programmability\TableValuedFunctions\QuestionType_Read.sql" />
-    <Build Include="Programmability\TableValuedFunctions\TestType_Read.sql" />
-    <Build Include="Programmability\TableValuedFunctions\GroupType_Read.sql" />
-    <Build Include="Programmability\TableValuedFunctions\UserType_Read.sql" />
+    <Build Include="Programmability\StoredProcedures\Tests\Answer_Create.sql" />
+    <Build Include="Programmability\TableValuedFunctions\Users\GroupType_Read.sql" />
+    <Build Include="Programmability\TableValuedFunctions\Users\GroupsControlWorks_Read.sql" />
+    <Build Include="Programmability\TableValuedFunctions\Users\Group_Read.sql" />
+    <Build Include="Programmability\TableValuedFunctions\Tests\ControlWork_Read.sql" />
+    <Build Include="Programmability\TableValuedFunctions\Tests\ControlWorkResult_Read.sql" />
+    <Build Include="Programmability\TableValuedFunctions\Users\User_Read.sql" />
+    <Build Include="Programmability\TableValuedFunctions\Users\UserType_Read.sql" />
+    <Build Include="Programmability\TableValuedFunctions\Tests\Answer_Read.sql" />
+    <Build Include="Programmability\TableValuedFunctions\Tests\Question_Read.sql" />
+    <Build Include="Programmability\TableValuedFunctions\Tests\QuestionType_Read.sql" />
+    <Build Include="Programmability\TableValuedFunctions\Tests\TestType_Read.sql" />
+    <Build Include="Programmability\StoredProcedures\Tests\ControlWork_Create.sql" />
+    <Build Include="Programmability\StoredProcedures\Tests\ControlWorkResult_Create.sql" />
+    <Build Include="Programmability\StoredProcedures\Tests\Question_Create.sql" />
+    <Build Include="Programmability\StoredProcedures\Users\Group_Create.sql" />
+    <Build Include="Programmability\StoredProcedures\Users\GroupControlWork_Create.sql" />
+    <Build Include="Programmability\StoredProcedures\Users\User_Create.sql" />
+    <Build Include="Programmability\StoredProcedures\Tests\Answer_Update.sql" />
+    <Build Include="Programmability\StoredProcedures\Tests\ControlWork_Update.sql" />
+    <Build Include="Programmability\StoredProcedures\Tests\Question_Update.sql" />
+    <Build Include="Programmability\StoredProcedures\Users\Group_Update.sql" />
+    <Build Include="Programmability\StoredProcedures\Users\User_Update.sql" />
+    <Build Include="Programmability\StoredProcedures\Tests\Answer_Delete.sql" />
+    <Build Include="Programmability\StoredProcedures\Tests\ControlWork_Delete.sql" />
+    <Build Include="Programmability\StoredProcedures\Tests\ControlWorkResult_Delete.sql" />
+    <Build Include="Programmability\StoredProcedures\Tests\Question_Delete.sql" />
+    <Build Include="Programmability\StoredProcedures\Users\Group_Delete.sql" />
+    <Build Include="Programmability\StoredProcedures\Users\GroupControlWork_Delete.sql" />
+    <Build Include="Programmability\StoredProcedures\Users\User_Delete.sql" />
   </ItemGroup>
 </Project>
