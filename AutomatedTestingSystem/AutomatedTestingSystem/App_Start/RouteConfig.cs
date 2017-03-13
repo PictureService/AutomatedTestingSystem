@@ -18,6 +18,14 @@ namespace AutomatedTestingSystem
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
-        }
+
+#if DEBUG
+			int i = 0;
+#elif Local
+			int i = 0;
+#elif LOCAL
+			int i = 0;
+#endif
+		}
     }
 }
