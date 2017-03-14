@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>AutomatedTestingSystem.Database</Name>
+    <Name>Database</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{be288b6a-39d2-407a-867a-9c56b8fde64f}</ProjectGuid>
@@ -53,6 +53,9 @@
     <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
     <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Local|AnyCPU' ">
+    <OutputPath>bin\Local\</OutputPath>
+  </PropertyGroup>
   <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
@@ -68,6 +71,8 @@
     <Folder Include="Programmability\TableValuedFunctions\Users" />
     <Folder Include="Programmability\StoredProcedures\Tests" />
     <Folder Include="Programmability\StoredProcedures\Users" />
+    <Folder Include="Publish" />
+    <Folder Include="Publish\Local" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Schemas\Users.sql" />
@@ -113,5 +118,8 @@
     <Build Include="Programmability\StoredProcedures\Users\Group_Delete.sql" />
     <Build Include="Programmability\StoredProcedures\Users\GroupControlWork_Delete.sql" />
     <Build Include="Programmability\StoredProcedures\Users\User_Delete.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Publish\Local\AutomatedTestingSystem.Database.publish.xml" />
   </ItemGroup>
 </Project>
