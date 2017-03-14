@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{AB880C4A-4009-4D1F-9C1C-029D45EB6E88}"
 EndProject
@@ -24,6 +24,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32A43F69-47DB-47E5-80D1-CF0762F03B76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32A43F69-47DB-47E5-80D1-CF0762F03B76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32A43F69-47DB-47E5-80D1-CF0762F03B76}.Local|Any CPU.ActiveCfg = Local|Any CPU
+		{32A43F69-47DB-47E5-80D1-CF0762F03B76}.Local|Any CPU.Build.0 = Local|Any CPU
+		{32A43F69-47DB-47E5-80D1-CF0762F03B76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32A43F69-47DB-47E5-80D1-CF0762F03B76}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BE288B6A-39D2-407A-867A-9C56B8FDE64F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BE288B6A-39D2-407A-867A-9C56B8FDE64F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE288B6A-39D2-407A-867A-9C56B8FDE64F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
