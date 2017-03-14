@@ -53,9 +53,6 @@
     <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
     <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Local|AnyCPU' ">
-    <OutputPath>bin\Local\</OutputPath>
-  </PropertyGroup>
   <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
@@ -116,8 +113,5 @@
     <Build Include="Programmability\StoredProcedures\Users\Group_Delete.sql" />
     <Build Include="Programmability\StoredProcedures\Users\GroupControlWork_Delete.sql" />
     <Build Include="Programmability\StoredProcedures\Users\User_Delete.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="AutomatedTestingSystem.Database.publish.xml" />
   </ItemGroup>
 </Project>
