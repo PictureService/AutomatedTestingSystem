@@ -41,8 +41,32 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Answer.cs" />
+    <Compile Include="AnswerRepository.cs" />
     <Compile Include="ControlWork.cs" />
+    <Compile Include="ControlWorkRepository.cs" />
+    <Compile Include="ControlWorkResult.cs" />
+    <Compile Include="ControlWorkResultRepository.cs" />
+    <Compile Include="Filter.cs" />
+    <Compile Include="Group.cs" />
+    <Compile Include="GroupControlWorkRepository.cs" />
+    <Compile Include="GroupRepository.cs" />
+    <Compile Include="GroupsControlWorks.cs" />
+    <Compile Include="GroupType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Question.cs" />
+    <Compile Include="QuestionRepository.cs" />
+    <Compile Include="QuestionType.cs" />
+    <Compile Include="Repository.cs" />
+    <Compile Include="TestType.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="UserRepository.cs" />
+    <Compile Include="UserType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AutomatedTestingSystem.Database\AutomatedTestingSystem.Database.csproj">
+      <Project>{1c76545e-9e0c-49fe-88c5-d4cacea265bc}</Project>
+      <Name>AutomatedTestingSystem.Database</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

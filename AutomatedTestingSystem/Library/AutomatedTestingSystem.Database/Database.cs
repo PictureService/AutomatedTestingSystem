@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using static AutomatedTestingSystem.Database.ConnectionStrings;
 
 namespace AutomatedTestingSystem.Database
@@ -22,6 +19,7 @@ namespace AutomatedTestingSystem.Database
         {
             return GetRows(procedureName, CommandType.StoredProcedure, parameters);
         }
+
         /// <summary>
         /// Получение строк, используя запрос
         /// </summary>
@@ -32,6 +30,7 @@ namespace AutomatedTestingSystem.Database
         {
             return GetRows(query, CommandType.Text, parameters);
         }
+
         /// <summary>
         /// Получение строк, используя объект <see cref="CommandType"/>
         /// </summary>

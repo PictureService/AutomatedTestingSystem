@@ -7,7 +7,7 @@
     public sealed class Answer
     {
         /// <summary>
-        /// Идентификатор объекта в базе<
+        /// Идентификатор объекта в базе
         /// </summary>
         internal int Id { get; private set; }
 

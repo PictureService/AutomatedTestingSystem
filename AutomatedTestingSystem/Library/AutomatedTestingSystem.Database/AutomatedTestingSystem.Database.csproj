@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="ConnectionStrings.cs" />
     <Compile Include="Database.cs" />
+    <Compile Include="DatabaseManager.cs" />
     <Compile Include="Database\Procedures.cs" />
     <Compile Include="Database\TableValuedFunctions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
