@@ -52,15 +52,19 @@
     <Compile Include="GroupRepository.cs" />
     <Compile Include="GroupsControlWorks.cs" />
     <Compile Include="GroupType.cs" />
+    <Compile Include="GroupTypeRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Question.cs" />
     <Compile Include="QuestionRepository.cs" />
     <Compile Include="QuestionType.cs" />
+    <Compile Include="QuestionTypeRepository.cs" />
     <Compile Include="Repository.cs" />
     <Compile Include="TestType.cs" />
+    <Compile Include="TestTypeRepository.cs" />
     <Compile Include="User.cs" />
     <Compile Include="UserRepository.cs" />
     <Compile Include="UserType.cs" />
+    <Compile Include="UserTypeRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AutomatedTestingSystem.Database\AutomatedTestingSystem.Database.csproj">
