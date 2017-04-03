@@ -24,6 +24,10 @@ namespace AutomatedTestingSystem.DatabaseRepository
 
         internal override Question Read(int id)
         {
+            if (id <= 0)
+            {
+                throw new ArgumentException("Идентификатор меньше или равен нулю", "id");
+            }
             Filter filter = new QuestionFilter
             {
                 Id = id
@@ -58,6 +62,38 @@ namespace AutomatedTestingSystem.DatabaseRepository
                     ));
             }
             return output;
+        }
+
+        internal override void Update(Question item)
+        {
+            if (item == null)
+            {
+                throw new ArgumentNullException("item", "Аргумент не должен содержать значение Null");
+            }
+
+            List<SqlParameter> parameters = new List<SqlParameter>
+            {
+                new SqlParameter("QuestionId", item.Id),
+                new SqlParameter("QuestionText", item.Text),
+                new SqlParameter("QuestionTypeId", item.QuestionTypeId)
+            };
+
+            ExecProcedure(Procedures.Tests.Question_Update, parameters);
+        }
+
+        internal override void Delete(int id)
+        {
+            if (id <= 0)
+            {
+                throw new ArgumentException("Идентификатор равен или меньше нуля", "id");
+            }
+
+            List<SqlParameter> parameters = new List<SqlParameter>
+            {
+                new SqlParameter("QuestionId",id)
+            };
+
+            ExecProcedure(Procedures.Tests.Question_Delete, parameters);
         }
     }
 

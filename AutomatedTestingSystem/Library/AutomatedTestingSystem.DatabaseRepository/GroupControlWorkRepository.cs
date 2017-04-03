@@ -23,6 +23,11 @@ namespace AutomatedTestingSystem.DatabaseRepository
 
         internal override GroupsControlWorks Read(int id)
         {
+            if (id <= 0)
+            {
+                throw new ArgumentException("Идентификатор меньше или равен нулю", "id");
+            }
+
             Filter filter = new GroupsControlWorksFilter
             {
                 Id = id
@@ -53,6 +58,21 @@ namespace AutomatedTestingSystem.DatabaseRepository
                     ));
             }
             return output;
+        }
+
+        internal override void Delete(int id)
+        {
+            if (id <= 0)
+            {
+                throw new ArgumentException("Идентификатор равен или меньше нуля", "id");
+            }
+
+            List<SqlParameter> parameters = new List<SqlParameter>
+            {
+                new SqlParameter("GroupControlWorkId",id)
+            };
+
+            ExecProcedure(Procedures.Users.GroupControlWork_Delete, parameters);
         }
     }
 

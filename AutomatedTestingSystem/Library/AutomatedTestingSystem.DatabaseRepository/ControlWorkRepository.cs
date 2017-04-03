@@ -24,6 +24,11 @@ namespace AutomatedTestingSystem.DatabaseRepository
 
         internal override ControlWork Read(int id)
         {
+            if (id <= 0)
+            {
+                throw new ArgumentException("Идентификатор меньше или равен нулю", "id");
+            }
+
             Filter filter = new ControlWorkFilter
             {
                 Id = id
@@ -55,6 +60,38 @@ namespace AutomatedTestingSystem.DatabaseRepository
                     ));
             }
             return output;
+        }
+
+        internal override void Update(ControlWork item)
+        {
+            if(item == null)
+            {
+                throw new ArgumentNullException("item","Аргумент не должен содержать значение Null");
+            }
+
+            List<SqlParameter> parameters = new List<SqlParameter>
+            {
+                new SqlParameter("ControlWorkId", item.Id),
+                new SqlParameter("ControlWorkName", item.Name),
+                new SqlParameter("Description", item.Description),
+                new SqlParameter("TestTypeId", item.TestTypeId)
+            };
+            ExecProcedure(Procedures.Tests.ControlWork_Update, parameters);
+        }
+
+        internal override void Delete(int id)
+        {
+            if (id <= 0)
+            {
+                throw new ArgumentException("Идентификатор равен или меньше нуля", "id");
+            }
+
+            List<SqlParameter> parameters = new List<SqlParameter>
+            {
+                new SqlParameter("ControlWorkId", id)
+            };
+
+            ExecProcedure(Procedures.Tests.ControlWork_Delete, parameters);
         }
     }
 

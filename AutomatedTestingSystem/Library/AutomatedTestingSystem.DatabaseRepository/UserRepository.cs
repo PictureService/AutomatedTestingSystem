@@ -27,6 +27,11 @@ namespace AutomatedTestingSystem.DatabaseRepository
 
         internal override User Read(int id)
         {
+            if (id <= 0)
+            {
+                throw new ArgumentException("Идентификатор меньше или равен нулю", "id");
+            }
+
             Filter filter = new UserFilter
             {
                 Id = id
@@ -64,6 +69,41 @@ namespace AutomatedTestingSystem.DatabaseRepository
             return output;
         }
 
+        internal override void Update(User item)
+        {
+            if (item == null)
+            {
+                throw new ArgumentNullException("item", "Аргумент не должен содержать значение Null");
+            }
+
+            List<SqlParameter> parameters = new List<SqlParameter>
+            {
+                new SqlParameter("UserId", item.Id),
+                new SqlParameter("UserTypeId", item.UserTypeId),
+                new SqlParameter("GroupId", item.GroupId),
+                new SqlParameter("Login", item.Login),
+                new SqlParameter("UserName", item.Password),
+                new SqlParameter("Surname", item.Surname),
+                new SqlParameter("Patronymic", item.Patronymic)
+            };
+
+            ExecProcedure(Procedures.Users.User_Update, parameters);
+        }
+
+        internal override void Delete(int id)
+        {
+            if (id <= 0)
+            {
+                throw new ArgumentException("Идентификатор равен или меньше нуля", "id");
+            }
+
+            List<SqlParameter> parameters = new List<SqlParameter>
+            {
+                new SqlParameter("AnswerId",id)
+            };
+
+            ExecProcedure(Procedures.Users.User_Delete, parameters);
+        }
     }
 
 

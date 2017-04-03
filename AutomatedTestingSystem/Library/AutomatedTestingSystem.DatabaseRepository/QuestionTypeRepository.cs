@@ -13,6 +13,11 @@ namespace AutomatedTestingSystem.DatabaseRepository
 
         internal override QuestionType Read(int id)
         {
+            if (id <= 0)
+            {
+                throw new ArgumentException("Идентификатор меньше или равен нулю", "id");
+            }
+
             Filter filter = new QuestionFilter
             {
                 Id = id

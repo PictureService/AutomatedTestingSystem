@@ -12,6 +12,10 @@ namespace AutomatedTestingSystem.DatabaseRepository
     {
         internal override TestType Read(int id)
         {
+            if (id <= 0)
+            {
+                throw new ArgumentException("Идентификатор меньше или равен нулю", "id");
+            }
             Filter filter = new TestTypeFilter
             {
                 Id = id

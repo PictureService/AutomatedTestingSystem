@@ -22,6 +22,11 @@ namespace AutomatedTestingSystem.DatabaseRepository
 
         internal override Group Read(int id)
         {
+            if (id <= 0)
+            {
+                throw new ArgumentException("Идентификатор меньше или равен нулю", "id");
+            }
+
             Filter filter = new GroupFilter
             {
                 Id = id 
@@ -53,6 +58,37 @@ namespace AutomatedTestingSystem.DatabaseRepository
             return output;
         }
 
+        internal override void Update(Group item)
+        {
+            if (item == null)
+            {
+                throw new ArgumentNullException("item", "Аргумент не должен содержать значение Null");
+            }
+
+            List<SqlParameter> parameters = new List<SqlParameter>
+            {
+                new SqlParameter("GroupId", item.Id),
+                new SqlParameter("GroupName", item.Name),
+                new SqlParameter("GroupTypeId", item.GroupTypeId)
+            };
+
+            ExecProcedure(Procedures.Users.Group_Update, parameters);
+        }
+
+        internal override void Delete(int id)
+        {
+            if (id <= 0)
+            {
+                throw new ArgumentException("Идентификатор равен или меньше нуля", "id");
+            }
+
+            List<SqlParameter> parameters = new List<SqlParameter>
+            {
+                new SqlParameter("GroupId",id)
+            };
+
+            ExecProcedure(Procedures.Users.Group_Delete, parameters);
+        }
     }
 
 
