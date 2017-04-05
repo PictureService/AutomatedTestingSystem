@@ -41,11 +41,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Answer.cs" />
+    <Compile Include="AnswerManager.cs" />
     <Compile Include="AnswerRepository.cs" />
     <Compile Include="ControlWork.cs" />
     <Compile Include="ControlWorkRepository.cs" />
     <Compile Include="ControlWorkResult.cs" />
     <Compile Include="ControlWorkResultRepository.cs" />
+    <Compile Include="DatabaseManager.cs" />
     <Compile Include="Filter.cs" />
     <Compile Include="Group.cs" />
     <Compile Include="GroupControlWorkRepository.cs" />
