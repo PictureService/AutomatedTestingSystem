@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{AB880C4A-4009-4D1F-9C1C-029D45EB6E88}"
 EndProject
@@ -18,6 +18,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomatedTestingSystem.Database", "Library\AutomatedTestingSystem.Database\AutomatedTestingSystem.Database.csproj", "{1C76545E-9E0C-49FE-88C5-D4CACEA265BC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomatedTestingSystem.DatabaseRepository", "Library\AutomatedTestingSystem.DatabaseRepository\AutomatedTestingSystem.DatabaseRepository.csproj", "{FA4EF93E-4075-4DA1-99B8-F150FCD914B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomatedTestingSystem.UnitTests", "Tests\AutomatedTestingSystem.UnitTests\AutomatedTestingSystem.UnitTests.csproj", "{25325856-47A9-452B-9242-9E1C7F4CC0F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomatedTestingSystem.TestFramework", "Tests\AutomatedTestingSystem.TestFramework\AutomatedTestingSystem.TestFramework.csproj", "{CAE573FF-C6BC-49D0-8500-15EC007092DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +57,18 @@ Global
 		{FA4EF93E-4075-4DA1-99B8-F150FCD914B6}.Local|Any CPU.Build.0 = Release|Any CPU
 		{FA4EF93E-4075-4DA1-99B8-F150FCD914B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA4EF93E-4075-4DA1-99B8-F150FCD914B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25325856-47A9-452B-9242-9E1C7F4CC0F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25325856-47A9-452B-9242-9E1C7F4CC0F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25325856-47A9-452B-9242-9E1C7F4CC0F6}.Local|Any CPU.ActiveCfg = Release|Any CPU
+		{25325856-47A9-452B-9242-9E1C7F4CC0F6}.Local|Any CPU.Build.0 = Release|Any CPU
+		{25325856-47A9-452B-9242-9E1C7F4CC0F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25325856-47A9-452B-9242-9E1C7F4CC0F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAE573FF-C6BC-49D0-8500-15EC007092DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAE573FF-C6BC-49D0-8500-15EC007092DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAE573FF-C6BC-49D0-8500-15EC007092DF}.Local|Any CPU.ActiveCfg = Release|Any CPU
+		{CAE573FF-C6BC-49D0-8500-15EC007092DF}.Local|Any CPU.Build.0 = Release|Any CPU
+		{CAE573FF-C6BC-49D0-8500-15EC007092DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAE573FF-C6BC-49D0-8500-15EC007092DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,5 +78,7 @@ Global
 		{32A43F69-47DB-47E5-80D1-CF0762F03B76} = {5B4E8ADF-3D76-4E9F-A0A7-FAE2CFF2713B}
 		{1C76545E-9E0C-49FE-88C5-D4CACEA265BC} = {83008751-9C16-418A-A9FF-DD4F2344A691}
 		{FA4EF93E-4075-4DA1-99B8-F150FCD914B6} = {83008751-9C16-418A-A9FF-DD4F2344A691}
+		{25325856-47A9-452B-9242-9E1C7F4CC0F6} = {B8DB3400-0DE9-41A3-A966-EB1B07A650F1}
+		{CAE573FF-C6BC-49D0-8500-15EC007092DF} = {B8DB3400-0DE9-41A3-A966-EB1B07A650F1}
 	EndGlobalSection
 EndGlobal

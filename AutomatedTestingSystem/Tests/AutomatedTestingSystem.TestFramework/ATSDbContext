@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="AST" Class="ATSDbContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=AST;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True" SettingsObjectName="AutomatedTestingSystem.TestFramework.Properties.Settings" SettingsPropertyName="ASTConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="Tests.Answer" Member="Answers">
+    <Type Name="Answer">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="QuestionId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Text" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="IsTrue" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Question_Answer" Member="Question" ThisKey="QuestionId" OtherKey="Id" Type="Question" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="Tests.ControlWork" Member="ControlWorks">
+    <Type Name="ControlWork">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AuthorUserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="TestTypeId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="ControlWork_ControlWorkResult" Member="ControlWorkResults" ThisKey="Id" OtherKey="ControlWorkId" Type="ControlWorkResult" />
+      <Association Name="ControlWork_Question" Member="Questions" ThisKey="Id" OtherKey="ControlWorkId" Type="Question" />
+      <Association Name="ControlWork_GroupsControlWork" Member="GroupsControlWorks" ThisKey="Id" OtherKey="ControlWorkId" Type="GroupsControlWork" />
+      <Association Name="TestType_ControlWork" Member="TestType" ThisKey="TestTypeId" OtherKey="Id" Type="TestType" IsForeignKey="true" />
+      <Association Name="User_ControlWork" Member="User" ThisKey="AuthorUserId" OtherKey="Id" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="Tests.ControlWorkResult" Member="ControlWorkResults">
+    <Type Name="ControlWorkResult">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ControlWorkId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CountTrueAnswers" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="ControlWork_ControlWorkResult" Member="ControlWork" ThisKey="ControlWorkId" OtherKey="Id" Type="ControlWork" IsForeignKey="true" />
+      <Association Name="User_ControlWorkResult" Member="User" ThisKey="UserId" OtherKey="Id" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="Tests.Question" Member="Questions">
+    <Type Name="Question">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Text" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="ControlWorkId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="QuestionTypeId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdd" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Question_Answer" Member="Answers" ThisKey="Id" OtherKey="QuestionId" Type="Answer" />
+      <Association Name="ControlWork_Question" Member="ControlWork" ThisKey="ControlWorkId" OtherKey="Id" Type="ControlWork" IsForeignKey="true" />
+      <Association Name="QuestionType_Question" Member="QuestionType" ThisKey="QuestionTypeId" OtherKey="Id" Type="QuestionType" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="Tests.QuestionType" Member="QuestionTypes">
+    <Type Name="QuestionType">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="QuestionType_Question" Member="Questions" ThisKey="Id" OtherKey="QuestionTypeId" Type="Question" />
+    </Type>
+  </Table>
+  <Table Name="Tests.TestType" Member="TestTypes">
+    <Type Name="TestType">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="TestType_ControlWork" Member="ControlWorks" ThisKey="Id" OtherKey="TestTypeId" Type="ControlWork" />
+    </Type>
+  </Table>
+  <Table Name="Users.[Group]" Member="Groups">
+    <Type Name="Group">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="GroupTypeId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Group_GroupsControlWork" Member="GroupsControlWorks" ThisKey="Id" OtherKey="GroupId" Type="GroupsControlWork" />
+      <Association Name="Group_User" Member="Users" ThisKey="Id" OtherKey="GroupId" Type="User" />
+      <Association Name="GroupType_Group" Member="GroupType" ThisKey="GroupTypeId" OtherKey="Id" Type="GroupType" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="Users.GroupsControlWorks" Member="GroupsControlWorks">
+    <Type Name="GroupsControlWork">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="GroupId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ControlWorkId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="ControlWork_GroupsControlWork" Member="ControlWork" ThisKey="ControlWorkId" OtherKey="Id" Type="ControlWork" IsForeignKey="true" />
+      <Association Name="Group_GroupsControlWork" Member="Group" ThisKey="GroupId" OtherKey="Id" Type="Group" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="Users.GroupType" Member="GroupTypes">
+    <Type Name="GroupType">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="GroupType_Group" Member="Groups" ThisKey="Id" OtherKey="GroupTypeId" Type="Group" />
+    </Type>
+  </Table>
+  <Table Name="Users.[User]" Member="Users">
+    <Type Name="User">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserTypeId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="GroupId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Login" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Surname" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Patronymic" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Association Name="User_ControlWork" Member="ControlWorks" ThisKey="Id" OtherKey="AuthorUserId" Type="ControlWork" />
+      <Association Name="User_ControlWorkResult" Member="ControlWorkResults" ThisKey="Id" OtherKey="UserId" Type="ControlWorkResult" />
+      <Association Name="Group_User" Member="Group" ThisKey="GroupId" OtherKey="Id" Type="Group" IsForeignKey="true" />
+      <Association Name="UserType_User" Member="UserType" ThisKey="UserTypeId" OtherKey="Id" Type="UserType" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="Users.UserType" Member="UserTypes">
+    <Type Name="UserType">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="UserType_User" Member="Users" ThisKey="Id" OtherKey="UserTypeId" Type="User" />
+    </Type>
+  </Table>
+</Database>

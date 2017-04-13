@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 16.75, 11.125" name="DataClasses1">
+  <DataContextMoniker Name="/ATSDbContext" />
+  <nestedChildShapes>
+    <classShape Id="a51592ae-90f5-4ff1-ade2-e9c38aea82ae" absoluteBounds="14.5, 7.25, 2, 1.5785953776041675">
+      <DataClassMoniker Name="/ATSDbContext/Answer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0c5fd1ff-78ef-4264-ae53-4d30c1635468" absoluteBounds="14.515, 7.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fab45832-542e-4f1b-af19-af9e7ad04a66" absoluteBounds="9, 3.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/ATSDbContext/ControlWork" />
+      <nestedChildShapes>
+        <elementListCompartment Id="09cc555d-d1c4-4326-a0ae-e7688c23811e" absoluteBounds="9.015, 4.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a4b27f9a-7e4a-4ebb-9a20-e4105324da84" absoluteBounds="11.75, 3.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/ATSDbContext/ControlWorkResult" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3af246e2-87d8-481c-bcd7-d135ae9ecff8" absoluteBounds="11.765, 4.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a7488383-57e6-4716-90f0-65960491f779" absoluteBounds="11.75, 0.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/ATSDbContext/Question" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1d940482-6ed2-4cdb-b1f0-0e5464bb6956" absoluteBounds="11.765, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ea94eb49-847b-4ed6-a3aa-a3e8d592ff1d" absoluteBounds="9, 6.875, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/ATSDbContext/QuestionType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2b7f1f16-d0e7-4aa8-ada5-57e96b8338a3" absoluteBounds="9.015, 7.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f8fa9fc7-0eb3-40b1-b09e-43045dfe9c78" absoluteBounds="6.25, 9.625, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/ATSDbContext/TestType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="450f6862-e222-4b1f-a324-10e9b68a2738" absoluteBounds="6.265, 10.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0eb935ad-c421-447a-91bb-6bac371bc794" absoluteBounds="3.5, 7, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/ATSDbContext/Group" />
+      <nestedChildShapes>
+        <elementListCompartment Id="76aa5629-25ee-455d-8c25-e9410977278f" absoluteBounds="3.515, 7.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8f02e62f-3f2f-47d1-9a5f-6d414a86533d" absoluteBounds="6.25, 7, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/ATSDbContext/GroupsControlWork" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b922ec62-0eef-45b9-9a86-10c367f8e048" absoluteBounds="6.265, 7.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4fab2408-fab0-4ab5-91cc-d55ff440333b" absoluteBounds="0.75, 7, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/ATSDbContext/GroupType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dd916b84-56c8-4206-bdf4-6a2c59af0f9b" absoluteBounds="0.765, 7.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="53e3a8a1-f48d-4095-959d-477c1e9ed394" absoluteBounds="6.25, 3.5, 2, 2.3478011067708331">
+      <DataClassMoniker Name="/ATSDbContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="45f1405b-b84d-4927-bccd-6e4cc6bf35da" absoluteBounds="6.265, 3.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f4840165-135a-4d00-94c3-13379d456095" absoluteBounds="3.5, 4.625, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/ATSDbContext/UserType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c30c4d9f-8687-41d4-935c-6bd4165e55fa" absoluteBounds="3.515, 5.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(11 : 4.66429768880208); (11.2916666666667 : 4.66429768880208 : JumpStart); (11.4583333333333 : 4.66429768880208 : JumpEnd); (11.75 : 4.66429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ATSDbContext/ControlWork/ControlWork_ControlWorkResult" />
+      <nodes>
+        <classShapeMoniker Id="fab45832-542e-4f1b-af19-af9e7ad04a66" />
+        <classShapeMoniker Id="a4b27f9a-7e4a-4ebb-9a20-e4105324da84" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.75 : 1.63544840494792); (15.5 : 1.63544840494792); (15.5 : 7.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ATSDbContext/Question/Question_Answer" />
+      <nodes>
+        <classShapeMoniker Id="a7488383-57e6-4716-90f0-65960491f779" />
+        <classShapeMoniker Id="a51592ae-90f5-4ff1-ade2-e9c38aea82ae" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10 : 3.75); (10 : 1.63544840494792); (11.75 : 1.63544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ATSDbContext/ControlWork/ControlWork_Question" />
+      <nodes>
+        <classShapeMoniker Id="fab45832-542e-4f1b-af19-af9e7ad04a66" />
+        <classShapeMoniker Id="a7488383-57e6-4716-90f0-65960491f779" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 6.87591745577925); (11.375 : 6.50091745577925); (11.375 : 2.10942460742187); (11.75 : 2.10942460742187)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ATSDbContext/QuestionType/QuestionType_Question" />
+      <nodes>
+        <classShapeMoniker Id="ea94eb49-847b-4ed6-a3aa-a3e8d592ff1d" />
+        <classShapeMoniker Id="a7488383-57e6-4716-90f0-65960491f779" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 9.625); (8.625 : 9.25); (8.625 : 4.63544840494792); (9 : 4.63544840494792)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ATSDbContext/TestType/TestType_ControlWork" />
+      <nodes>
+        <classShapeMoniker Id="f8fa9fc7-0eb3-40b1-b09e-43045dfe9c78" />
+        <classShapeMoniker Id="fab45832-542e-4f1b-af19-af9e7ad04a66" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.0612992741887 : 5.52089680989583); (8.8125 : 5.76969608408454); (8.8125 : 7.69314697265625); (8.70833333333333 : 7.69314697265625 : JumpStart); (8.54166666666667 : 7.69314697265625 : JumpEnd); (8.25 : 7.69314697265625)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ATSDbContext/ControlWork/ControlWork_GroupsControlWork" />
+      <nodes>
+        <classShapeMoniker Id="fab45832-542e-4f1b-af19-af9e7ad04a66" />
+        <classShapeMoniker Id="8f02e62f-3f2f-47d1-9a5f-6d414a86533d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 7.69314697265625); (6.25 : 7.69314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ATSDbContext/Group/Group_GroupsControlWork" />
+      <nodes>
+        <classShapeMoniker Id="0eb935ad-c421-447a-91bb-6bac371bc794" />
+        <classShapeMoniker Id="8f02e62f-3f2f-47d1-9a5f-6d414a86533d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 7.59699625651042); (3.5 : 7.59699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ATSDbContext/GroupType/GroupType_Group" />
+      <nodes>
+        <classShapeMoniker Id="4fab2408-fab0-4ab5-91cc-d55ff440333b" />
+        <classShapeMoniker Id="0eb935ad-c421-447a-91bb-6bac371bc794" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 4.13022420247396); (9 : 4.13022420247396)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ATSDbContext/User/User_ControlWork" />
+      <nodes>
+        <classShapeMoniker Id="53e3a8a1-f48d-4095-959d-477c1e9ed394" />
+        <classShapeMoniker Id="fab45832-542e-4f1b-af19-af9e7ad04a66" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 5.71559895833333); (8.54166666666667 : 5.71559895833333 : JumpStart); (8.70833333333333 : 5.71559895833333 : JumpEnd); (11.2916666666667 : 5.71559895833333 : JumpStart); (11.4583333333333 : 5.71559895833333 : JumpEnd); (12.75 : 5.71559895833333); (12.75 : 5.45359537760417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ATSDbContext/User/User_ControlWorkResult" />
+      <nodes>
+        <classShapeMoniker Id="53e3a8a1-f48d-4095-959d-477c1e9ed394" />
+        <classShapeMoniker Id="a4b27f9a-7e4a-4ebb-9a20-e4105324da84" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 7); (5.875 : 6.625); (5.875 : 4.67390055338542); (6.25 : 4.67390055338542)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ATSDbContext/Group/Group_User" />
+      <nodes>
+        <classShapeMoniker Id="0eb935ad-c421-447a-91bb-6bac371bc794" />
+        <classShapeMoniker Id="53e3a8a1-f48d-4095-959d-477c1e9ed394" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 5.30894653320312); (5.79166666666667 : 5.30894653320312 : JumpStart); (5.95833333333333 : 5.30894653320312 : JumpEnd); (6.25 : 5.30894653320312)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ATSDbContext/UserType/UserType_User" />
+      <nodes>
+        <classShapeMoniker Id="f4840165-135a-4d00-94c3-13379d456095" />
+        <classShapeMoniker Id="53e3a8a1-f48d-4095-959d-477c1e9ed394" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

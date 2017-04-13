@@ -44,28 +44,37 @@
     <Compile Include="AnswerManager.cs" />
     <Compile Include="AnswerRepository.cs" />
     <Compile Include="ControlWork.cs" />
+    <Compile Include="ControlWorkManager.cs" />
     <Compile Include="ControlWorkRepository.cs" />
     <Compile Include="ControlWorkResult.cs" />
+    <Compile Include="ControlWorkResultManager.cs" />
     <Compile Include="ControlWorkResultRepository.cs" />
     <Compile Include="DatabaseManager.cs" />
     <Compile Include="Filter.cs" />
     <Compile Include="Group.cs" />
     <Compile Include="GroupControlWorkRepository.cs" />
+    <Compile Include="GroupManager.cs" />
     <Compile Include="GroupRepository.cs" />
     <Compile Include="GroupsControlWorks.cs" />
     <Compile Include="GroupType.cs" />
+    <Compile Include="GroupTypeManager.cs" />
     <Compile Include="GroupTypeRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Question.cs" />
+    <Compile Include="QuestionManager.cs" />
     <Compile Include="QuestionRepository.cs" />
     <Compile Include="QuestionType.cs" />
+    <Compile Include="QuestionTypeManager.cs" />
     <Compile Include="QuestionTypeRepository.cs" />
     <Compile Include="Repository.cs" />
     <Compile Include="TestType.cs" />
+    <Compile Include="TestTypeManager.cs" />
     <Compile Include="TestTypeRepository.cs" />
     <Compile Include="User.cs" />
+    <Compile Include="UserManager.cs" />
     <Compile Include="UserRepository.cs" />
     <Compile Include="UserType.cs" />
+    <Compile Include="UserTypeManager.cs" />
     <Compile Include="UserTypeRepository.cs" />
   </ItemGroup>
   <ItemGroup>
