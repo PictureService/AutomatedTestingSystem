@@ -20,7 +20,7 @@ namespace AutomatedTestingSystem.DatabaseRepository
 		/// </summary>
 		/// <param name="id">Идентификатор объекта типа <see cref="Answer"/></param>
 		/// <returns>Возвращает готовый объект типа <see cref="Answer"/></returns>
-		public static Answer AnswerReadById(int id)
+		public static Answer GetAnswer(int id)
 			=> new AnswerRepository().Read(id);
 
 		/// <summary>
@@ -28,7 +28,7 @@ namespace AutomatedTestingSystem.DatabaseRepository
 		/// </summary>
 		/// <param name="filter">Фильтр для отбора необходимых значений. Null, если необходимо получить все значения.</param>
 		/// <returns>Возвращает коллекцию объектов типа <see cref="Answer"/></returns>
-		public static IReadOnlyCollection<Answer> ReadAll(Filter filter)
+		public static IReadOnlyCollection<Answer> GetAnswers(Filter filter)
 			=> new AnswerRepository().ReadAll(filter);
 
 		/// <summary>
