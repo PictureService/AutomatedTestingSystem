@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [Tests].[ControlWorkResult]
 (
-	[Id]				INT NOT NULL, 
+	[Id]				INT NOT NULL IDENTITY, 
     [ControlWorkId]		INT NOT NULL, 
     [UserId]			INT NOT NULL, 
     [CountTrueAnswers]	INT NOT NULL,

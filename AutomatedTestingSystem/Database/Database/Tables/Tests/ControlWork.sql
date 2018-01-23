@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [Tests].[ControlWork]
 (
-	[Id]			INT				NOT NULL , 
+	[Id]			INT				NOT NULL IDENTITY, 
     [AuthorUserId]	INT				NOT NULL, 
     [Name]			NVARCHAR(100)	NOT NULL, 
     [Description]	NVARCHAR(400)	NULL, 

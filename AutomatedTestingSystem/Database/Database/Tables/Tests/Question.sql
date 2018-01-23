@@ -1,10 +1,10 @@
 ﻿CREATE TABLE [Tests].[Question]
 (
-	[Id]				INT				NOT NULL , 
+	[Id]				INT				NOT NULL IDENTITY, 
     [Text]				NVARCHAR(500)	NOT NULL, 
     [ControlWorkId]		INT				NOT NULL, 
     [QuestionTypeId]	INT				NOT NULL, 
-    [DateAdd]			DATETIME		NOT NULL,
+    [DateAdd]			DATETIME		NOT NULL DEFAULT GETDATE(),
 	CONSTRAINT [PK_Question] PRIMARY KEY CLUSTERED ([Id] ASC), 
     CONSTRAINT [FK_Question_ControlWork] FOREIGN KEY ([ControlWorkId]) REFERENCES [Tests].[ControlWork]([Id]),
 	CONSTRAINT [FK_Question_QuestionType] FOREIGN KEY ([QuestionTypeId]) REFERENCES [Tests].[QuestionType]([Id])  

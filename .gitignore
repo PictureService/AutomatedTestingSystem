@@ -134,10 +134,10 @@ DocProject/Help/Html2
 DocProject/Help/html
 
 # Click-Once directory
-publish/
+#publish/
 
 # Publish Web Output
-*.[Pp]ublish.xml
+#*.[Pp]ublish.xml
 *.azurePubxml
 
 # TODO: Un-comment the next line if you do not want to checkin 

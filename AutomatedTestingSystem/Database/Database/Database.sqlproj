@@ -120,6 +120,9 @@
     <Build Include="Programmability\StoredProcedures\Users\User_Delete.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Publish\Local\AutomatedTestingSystem.Database.publish.xml" />
+    <None Include="Publish\Local\Database.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="TestFill.PostDeployment.sql" />
   </ItemGroup>
 </Project>

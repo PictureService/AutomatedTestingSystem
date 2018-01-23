@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [Users].[GroupsControlWorks]
 (
-	[Id]			INT NOT NULL, 
+	[Id]			INT NOT NULL IDENTITY, 
     [GroupId]		INT NOT NULL, 
     [ControlWorkId]	INT NOT NULL,
 	CONSTRAINT [PK_GroupsControlWork] PRIMARY KEY CLUSTERED ([Id] ASC), 

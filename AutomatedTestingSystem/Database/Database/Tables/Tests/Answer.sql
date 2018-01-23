@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [Tests].[Answer]
 (
-	[Id]			INT				NOT NULL, 
+	[Id]			INT				NOT NULL IDENTITY, 
     [QuestionId]	INT				NOT NULL, 
     [Text]			NVARCHAR(100)	NOT NULL, 
     [IsTrue]		BIT				NOT NULL,

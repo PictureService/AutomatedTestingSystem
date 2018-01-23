@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [Users].[User]
 (
-	[Id]			INT				NOT NULL, 
+	[Id]			INT				NOT NULL IDENTITY, 
     [UserTypeId]	INT				NOT NULL, 
     [GroupId]		INT				NOT NULL, 
     [Login]			NVARCHAR(200)	NOT NULL, 
